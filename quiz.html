@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpson Quiz</title>
+    <style>
+        @font-face {
+            font-family: 'Simpsonfont';
+            src: url('Simpsonfont DEMO.otf') format('opentype');
+        }
+
+        /* Apply the custom font to the entire document */
+        * {
+            font-family: 'Simpsonfont', sans-serif;
+        }
+
+        #opening {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+    </style>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="question-one" class="question">
+      <h2>Question 1</h2>
+      <p>What is Marge Simpsons maiden name?</p>
+        <button class="answer" data-correct="false">Boulevard</button>
+        <br>
+        <button class="answer" data-correct="true">Bouvier</button>
+        <br>
+        <button class="answer" data-correct="false">Boogeyman</button>
+        <br>
+        <button class="answer" data-correct="false">Bowler</button>
+        <br>
+    </div> 
+    <div id="question-two" class="question"> 
+        <h2>Question 2</h2>
+        <p>How many children do Homer and Marge have?</p>
+          <button class="answer" data-correct="false">One</button>
+          <br>
+          <button class="answer" data-correct="false">Two</button>
+          <br>
+          <button class="answer" data-correct="true">Three</button>
+          <br>
+          <button class="answer" data-correct="false">Four</button>
+          <br>
+    </div> 
+      <div id="question-three" class="question">
+        <h2>Question 3</h2>
+        <p>Where does Homer work?</p>
+          <button class="answer" data-correct="false">Krusty Burger</button>
+          <br>
+          <button class="answer" data-correct="false">Springfield Elementary</button>
+          <br>
+          <button class="answer" data-correct="false">Moes Bar</button>
+          <br>
+          <button class="answer" data-correct="true">Nuclear Power Plant</button>
+          <br>
+      </div> 
+      <div id="question-four" class="question">
+        <h2>Question 4</h2>
+        <p>Who is Bart's best friend?</p>
+          <button class="answer" data-correct="false">Nelson</button>
+          <br>
+          <button class="answer" data-correct="true">Milhouse</button>
+          <br>
+          <button class="answer" data-correct="false">Ralph</button>
+          <br>
+          <button class="answer" data-correct="false">Martin</button>
+          <br>
+      </div> 
+      <div id="question-five" class="question">
+        <h2>Question 5</h2>
+        <p>What is the name of this character? <img id="moleman" src="moleman-pic.jpg"></p>
+          <button class="answer" data-correct="true">Hans Moleman</button>
+          <br>
+          <button class="answer" data-correct="false">Lionel Hutz</button>
+          <br>
+          <button class="answer" data-correct="false">Nick Riviera</button>
+          <br>
+          <button class="answer" data-correct="false">Groundskeeper Willie</button>
+          <br>
+      </div>
+      <img id="woohoo-pic" src="woohoo.jpg">
+      <img id="doh-pic" src="doh.jpg">
+      <button id="try-again">Try Again</button>
+      <button id="next-question">Next Question</button>
+      <script src="simp.js"></script>
+</body>
+</html>
